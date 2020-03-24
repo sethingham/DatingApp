@@ -1,0 +1,48 @@
+{
+  "firstName": "Seth",
+  "middleName": "Nathaniel",
+  "lastName": "Bossingham",
+  "suffix": "",
+  "ssn": "890-09-1234",
+  "dob": "05-01-1989",
+  "phone": "317-234-9876",
+  "secondaryPhone": "",
+  "address": [ 
+    {
+      "street": "123 Main Street",
+      "street2": "",
+      "city": "Indianapolis",
+      "state": "Indiana",
+      "zip": "46220"
+    }
+  ],
+  "timeAtResidence": "3 months",
+  "email": "thebest@iamseth.com",
+  "previousHousing": [
+    {
+      "monthlypayment": 1200,
+      "ownership": "rent",
+      "landlord": "Justice Beaver",
+      "landlordPhone": "317-234-1239",
+      "reasonForMove": "I am not a fan of crime fighting beavers."
+    }
+  ],
+  "employer": [
+    {
+      "company": "Eli Lilly",
+      "position": "Sales Manager",
+      "address": {
+        "street": "123 South Street",
+        "street2": "",
+        "city": "Indianapolis",
+        "state": "Indiana",
+        "zip": "46221"
+      },
+      "startDate": "20200203",
+      "supervisor": "Micheal Scott", 
+      "supervisorPhone": "3173450987",
+      "payrate": "12/month"
+    }
+  ]
+
+  }
