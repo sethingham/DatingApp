@@ -37,7 +37,8 @@ namespace DatingApp.API
                 c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
             });
             services.AddScoped<IAuthRepository, AuthRepository>();
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
@@ -61,9 +62,11 @@ namespace DatingApp.API
             // app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseCors(options => options.AllowAnyOrigin());
+
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseEndpoints(endpoints =>
             {
